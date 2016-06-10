@@ -53,7 +53,7 @@
 	padding-top:7px;
 }
 
-#nav1{
+.nav1{
 	background-color: rgb(102, 51, 0);
 	color: orange;
 	font-weight: bold;
@@ -64,11 +64,11 @@
     border: none;
     text-decoration:none;
     }
-#nav1:hover{
+.nav1:hover{
 	color: white;
 	font-size: 21px;
 }
-#btn1{
+.btn1{
 	background-color: rgb(102, 51, 0);
 	border:none;
 	color:white;
@@ -91,7 +91,7 @@
 	
 }
 
-#btn2{
+.btn2{
      background-color: orange;
      color: black;
      font-style: normal;
@@ -103,7 +103,7 @@
      border:none;
      text-decoration: none;
 }
-#btn2:hover{
+.btn2:hover{
     color: rgb(51, 102, 0);
     font-weight: bold;
     
@@ -113,17 +113,19 @@
     
 #item1_more, #item2_more, #item3_more, #item4_more,#item5_more,
 #item6_more, #item1_main, #item2_main, #item3_main, #item4_main,
-#item5_main,#item6_main, #item7_main,#item1_chef,#item2_chef,#item3_chef,#item4_chef  {
+#item5_main,#item6_main, #item7_main,#item1_dess,#item2_dess,#item3_dess,#item4_dess,
+#item1_chef,#item2_chef,#item3_chef,#item4_chef  {
 	display: none;
 }
 #item1_more, #item2_more, #item3_more, #item4_more,#item5_more,
 #item6_more, #item1_main, #item2_main, #item3_main, #item4_main,
-#item5_main,#item6_main, #item7_main, #item1_chef,#item2_chef,#item3_chef,#item4_chef{
+#item5_main,#item6_main, #item7_main,#item1_dess,#item2_dess,#item3_dess,#item4_dess,
+ #item1_chef,#item2_chef,#item3_chef,#item4_chef{
 	height: auto;
     margin-top: -110px;
     padding-top: 110px;
 }
-#item{
+.item{
 	width: 600px;
 	padding: 5px;
 }
@@ -137,7 +139,7 @@
     width:650px;
     margin-left: 15px;    
     }
-#item_image{
+.item_image{
 	margin: 0px 40px 0px 0px;
 	border: 1px solid black;
 	width: 150px;
@@ -187,12 +189,16 @@
 	color: green;
 	text-decoration: none;
 }
-#abt_text{
+.abt_text{
 	width:65%;
 	height: 100%;
 	padding-left: 225px;
 }
-
+#abt_text_bg,#abt_text_cp{
+	height: auto;
+    margin-top: -310px;
+    padding-top: 310px;
+}
 #abt_text_h1, #abt_text_h2{
 	text-align:left;
 	color: green;
@@ -269,11 +275,11 @@
 	margin-top: -210px;
 	padding-top: 210px;
 }
-#btn2:target{
+.btn2:target{
 	background-color: rgb(230, 149, 0);
 	color: green;
 }
-#price{
+.price{
 	padding-bottom: 60px;
 	margin: 0;
 	color: green;
@@ -433,7 +439,7 @@
 	
 	width: 500px;
 }
-#reg_element{
+.reg_element{
 	color: brown;
 	margin: 20px;
 }

@@ -32,13 +32,13 @@ function toggle_menu(id) {
 <a href="index.jsp"><img id="title_img" src="Images/title_image1.jpg" width="200" height ="200"></a>
 <header id ="header">
   
-  <a id="nav1" href="about.html" >ABOUT</a>
-  <a id="nav1" href="menu.html" >MENU</a>
-  <a id="nav1" href="catering.html">CATERING</a>
-  <a id="nav1" href="contact.html">CONTACT US</a>
-<button id = "btn1" onclick="location.href = 'Reg.html';">Sign Up</button>
+  <a class="nav1" href="about.html" >ABOUT</a>
+  <a class="nav1" href="menu.html" >MENU</a>
+  <a class="nav1" href="catering.html">CATERING</a>
+  <a class="nav1" href="contact.html">CONTACT US</a>
+<button class="btn1" onclick="location.href = 'Reg.html';">Sign Up</button>
 |
-<button id = "btn1" onclick="location.href = 'signin.jsp';">Log In</button>
+<button class="btn1" onclick="location.href = 'signin.jsp';">Log In</button>
 
 </header>
 <h1 id = "title">Seshu's</h1>
@@ -46,29 +46,29 @@ function toggle_menu(id) {
 <div id = "layout">
 
 <div id = "menu">
-  <a id = "btn2" href = "#table_one" onclick = "toggle_menu('btn2');">Sides</a>
-  <a id = "btn2" href = "#table_main" onclick = "toggle_menu('table_sides');">Main Course</a>
-  <a id = "btn2" href = "#table_desserts" onclick = "toggle_menu('table_sides');">Desserts</a>
-  <a id = "btn2" href = "#table_drinks" onclick = "toggle_menu('table_sides');">Drinks</a>
-  <a id = "btn2" href = "#table_chef" onclick = "toggle_menu('table_sides');">Chef Specialties</a>
+  <a class="btn2" href = "#table_one" onclick = "toggle_menu('btn2');">Sides</a>
+  <a class="btn2" href = "#table_main" onclick = "toggle_menu('table_sides');">Main Course</a>
+  <a class="btn2" href = "#table_desserts" onclick = "toggle_menu('table_sides');">Desserts</a>
+  <a class="btn2" href = "#table_drinks" onclick = "toggle_menu('table_sides');">Drinks</a>
+  <a class="btn2" href = "#table_chef" onclick = "toggle_menu('table_sides');">Chef Specialties</a>
 </div>
 
 <table>
 <tr><td>
 <table id = "table_sides">
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/samosa.jpg" alt="samosa" >Sides
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/samosa.jpg" alt="samosa" >Sides
    <p><a href= "#item1_more" onclick = "toggle_display('item1_more');" style = "color:green; font-weight:bold;">Samosa ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper<p>
    <div id = "item1_more">
    <a class="btn_add" href="#" data-name="Samosa" data-price="4.99">Add to Order</a>
    </div></td>
-   <td id = "price">$4.99</td>
+   <td class="price">$4.99</td>
    </tr>
 
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/s2.jpg" alt="Vegetable Manchuria" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/s2.jpg" alt="Vegetable Manchuria" >
    <p><a href= "#item2_more" onclick = "toggle_display('item2_more');" style = "color:green; font-weight:bold;">Vegetable Manchuria ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -76,11 +76,11 @@ function toggle_menu(id) {
    <div id = "item2_more">
    <a class="btn_add" href="#" data-name="Vegetable Manchuria" data-price="4.99">Add to Order</a>
     </div></td>
-   <td id = "price">$4.99</td>
+   <td class="price">$4.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/rolls.jpg" alt="Rolls" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/rolls.jpg" alt="Rolls" >
    <p><a href= "#item3_more" onclick = "toggle_display('item3_more');" style = "color:green; font-weight:bold;">Rolls ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -88,11 +88,11 @@ function toggle_menu(id) {
    <div id = "item3_more">
    <a class="btn_add" href="#" data-name="Rolls" data-price="4.99">Add to Order</a>
     </div></td>
-   <td id = "price">$4.99</td>
+   <td class="price">$4.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/S1.jpg" alt="Chilli Chicken" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/S1.jpg" alt="Chilli Chicken" >
    <p><a href= "#item4_more" onclick = "toggle_display('item4_more');" style = "color:green; font-weight:bold;">Chilli Chicken ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -100,11 +100,11 @@ function toggle_menu(id) {
    <div id = "item4_more">
    <a class="btn_add" href="#" data-name="Chilli Chicken" data-price="4.99">Add to Order</a>
     </div></td>
-   <td id = "price">$4.99</td>
+   <td class="price">$4.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/S3.jpg" alt="Tandoori Chicken" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/S3.jpg" alt="Tandoori Chicken" >
    <p><a href= "#item5_more" onclick = "toggle_display('item5_more');" style = "color:green; font-weight:bold;">Tandoori Chicken ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -112,11 +112,11 @@ function toggle_menu(id) {
    <div id = "item5_more">
    <a class="btn_add" href="#" data-name="Tandoori Chicken" data-price="4.99">Add to Order</a>
     </div></td>
-   <td id = "price">$4.99</td>
+   <td class="price">$4.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/S4.jpg" alt="Chicken Lollipops" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/S4.jpg" alt="Chicken Lollipops" >
    <p><a href= "#item6_more" onclick = "toggle_display('item6_more');" style = "color:green; font-weight:bold;">Chicken Lollipops ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -124,7 +124,7 @@ function toggle_menu(id) {
    <div id = "item6_more">
    <a class="btn_add" href="#" data-name="Chicken Lollipops" data-price="4.99">Add to Order</a>
     </div></td>
-   <td id = "price">$4.99</td>
+   <td class="price">$4.99</td>
    </tr>
    </table>
 
@@ -132,19 +132,19 @@ function toggle_menu(id) {
 
 <table id = "table_main">
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/m1.jpg" alt="Chicken Biryani" >Main
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/m1.jpg" alt="Chicken Biryani" >Main
    <p><a href= "#item1_main" onclick = "toggle_display('item1_main');" style = "color:green; font-weight:bold;">Chicken Biryani ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
    <div id = "item1_main"> 
    <a class="btn_add" href="#" data-name="Chicken Biryani" data-price="4.99">Add to Order</a>
     </div></td> 
-   <td id = "price">$11.99</td>
+   <td class="price">$11.99</td>
    </tr>
 
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/m2.jpg" alt="Mutton Biryani" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/m2.jpg" alt="Mutton Biryani" >
    <p><a href= "#item2_main" onclick = "toggle_display('item2_main');" style = "color:green; font-weight:bold;">Mutton Biryani ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -152,11 +152,11 @@ function toggle_menu(id) {
    <div id = "item2_main">
    <a class="btn_add" href="#" data-name="Mutton Biryani" data-price="4.99">Add to Order</a>
     </div></td>
-   <td id = "price">$11.99</td>
+   <td class="price">$11.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/m3.jpg" alt="Vegetable Biryani" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/m3.jpg" alt="Vegetable Biryani" >
    <p><a href= "#item3_main" onclick = "toggle_display('item3_main');" style = "color:green; font-weight:bold;">Vegetable Biryani ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -164,11 +164,11 @@ function toggle_menu(id) {
    <div id = "item3_main">
    <a class="btn_add" href="#" data-name="Vegetable Biryani" data-price="4.99">Add to Order</a>
    </div></td>
-   <td id = "price">$11.99</td>
+   <td class="price">$11.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/m4.jpg" alt="Naans" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/m4.jpg" alt="Naans" >
    <p><a href= "#item4_main" onclick = "toggle_display('item4_main');" style = "color:green; font-weight:bold;">Naan ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -176,11 +176,11 @@ function toggle_menu(id) {
    <div id = "item4_main">
    <a class="btn_add" href="#" data-name="Naans" data-price="4.99">Add to Order</a>
    </div></td>
-   <td id = "price">$11.99</td>
+   <td class="price">$11.99</td>
    </tr>
 
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/m5.jpg" alt="Butter Chicken" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/m5.jpg" alt="Butter Chicken" >
    <p><a href= "#item5_main" onclick = "toggle_display('item5_main');" style = "color:green; font-weight:bold;">Butter Chicken ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -188,11 +188,11 @@ function toggle_menu(id) {
    <div id = "item5_main">
    <a class="btn_add" href="#" data-name="Butter Chicken" data-price="4.99">Add to Order</a>
    </div></td>
-   <td id = "price">$11.99</td>
+   <td class="price">$11.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/m6.jpg" alt="Mutton Curry" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/m6.jpg" alt="Mutton Curry" >
    <p><a href= "#item6_main" onclick = "toggle_display('item6_main');" style = "color:green; font-weight:bold;">Mutton Curry ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -200,11 +200,11 @@ function toggle_menu(id) {
    <div id = "item6_main">
    <a class="btn_add" href="#" data-name="Mutton Curry" data-price="4.99">Add to Order</a>
    </div></td>
-   <td id = "price">$11.99</td>
+   <td class="price">$11.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/m7.jpg" alt="Mutter Paneer" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/m7.jpg" alt="Mutter Paneer" >
    <p><a href= "#item7_main" onclick = "toggle_display('item7_main');" style = "color:green; font-weight:bold;">Mutter Paneer ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -212,55 +212,55 @@ function toggle_menu(id) {
    <div id = "item7_main">
    <a class="btn_add" href="#" data-name="Mutter Paneer" data-price="4.99">Add to Order</a>
    </div></td>
-   <td id = "price">$11.99</td></tr></table>
+   <td class="price">$11.99</td></tr></table>
    
 
 <table id = "table_desserts">
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/d1.jpg" alt="Brownie Bite" >Desserts
-   <p><a href= "#item1_more" onclick = "toggle_display('item1_more');" style = "color:green; font-weight:bold;">Brownie Bite ></a><br>
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/d1.jpg" alt="Brownie Bite" >Desserts
+   <p><a href= "#item1_dess" onclick = "toggle_display('item1_more');" style = "color:green; font-weight:bold;">Brownie Bite ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
-   <div id = "item1_more"> 
+   <div id = "item1_dess"> 
    <a class="btn_add" href="#" data-name="Brownie Bite" data-price="4.99">Add to Order</a>
    </div></td> 
-   <td id = "price">$6.99</td>
+   <td class="price">$6.99</td>
    </tr>
 
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/d2.jpg" alt="Fruit Custard" >
-   <p><a href= "#item2_more" onclick = "toggle_display('item2_more');" style = "color:green; font-weight:bold;">Fruit Custard ></a><br>
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/d2.jpg" alt="Fruit Custard" >
+   <p><a href= "#item2_dess" onclick = "toggle_display('item2_more');" style = "color:green; font-weight:bold;">Fruit Custard ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
 
-   <div id = "item2_more">
+   <div id = "item2_dess">
    <a class="btn_add" href="#" data-name="Fruit Custard" data-price="4.99">Add to Order</a>
    </div></td>
-   <td id = "price">$6.99</td>
+   <td class="price">$6.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/d3.jpg" alt="Gulab Jamun`" >
-   <p><a href= "#item3_more" onclick = "toggle_display('item3_more');" style = "color:green; font-weight:bold;">Gulab Jamun ></a><br>
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/d3.jpg" alt="Gulab Jamun`" >
+   <p><a href= "#item3_dess" onclick = "toggle_display('item3_more');" style = "color:green; font-weight:bold;">Gulab Jamun ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
 
-   <div id = "item3_more">
+   <div id = "item3_dess">
    <a class="btn_add" href="#" data-name="Gulab Jamun" data-price="4.99">Add to Order</a>
    </div></td>
-   <td id = "price">$6.99</td>
+   <td class="price">$6.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/d4.jpg" alt="Ghajar Ka Halwa" >
-   <p><a href= "#item4_more" onclick = "toggle_display('item4_more');" style = "color:green; font-weight:bold;">Ghajar ka Halwa ></a><br>
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/d4.jpg" alt="Ghajar Ka Halwa" >
+   <p><a href= "#item4_dess" onclick = "toggle_display('item4_more');" style = "color:green; font-weight:bold;">Ghajar ka Halwa ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
 
-   <div id = "item4_more">
+   <div id = "item4_dess">
    <a class="btn_add" href="#" data-name="Ghajar Ka Halwa" data-price="4.99">Add to Order</a>
    </div></td>
-   <td id = "price">$6.99</td>
+   <td class="price">$6.99</td>
    
    </tr>
 
@@ -268,68 +268,68 @@ function toggle_menu(id) {
 
 
 <table id = "table_drinks">
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/dr1.jpg" alt="Mango Lassi" >Drinks
-   <p><a href= "#item1_more" onclick = "toggle_display('item1_more');" style = "color:green; font-weight:bold;">Mango Lassi ></a><br>
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/dr1.jpg" alt="Mango Lassi" >Drinks
+   <p><a href= "#item1_dess" onclick = "toggle_display('item1_more');" style = "color:green; font-weight:bold;">Mango Lassi ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
-   <div id = "item1_more"> 
+   <div id = "item1_dess"> 
    <a class="btn_add" href="#" data-name="Mango Lassi" data-price="4.99">Add to Order</a>
    </div></td> 
-   <td id = "price">$3.99</td>
+   <td class="price">$3.99</td>
    </tr>
 
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/dr2.jpg" alt="Falooda" >
-   <p><a href= "#item2_more" onclick = "toggle_display('item2_more');" style = "color:green; font-weight:bold;">Falooda ></a><br>
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/dr2.jpg" alt="Falooda" >
+   <p><a href= "#item2_dess" onclick = "toggle_display('item2_more');" style = "color:green; font-weight:bold;">Falooda ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
 
-   <div id = "item2_more">
+   <div id = "item2_dess">
    <a class="btn_add" href="#" data-name="Falooda" data-price="4.99">Add to Order</a>
    </div></td>
-    <td id = "price">$3.99</td>
+    <td class="price">$3.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/dr4.jpg" alt="Lemon-Mint Juice" >
-   <p><a href= "#item3_more" onclick = "toggle_display('item3_more');" style = "color:green; font-weight:bold;">Lemon-Mint Juice ></a><br>
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/dr4.jpg" alt="Lemon-Mint Juice" >
+   <p><a href= "#item3_dess" onclick = "toggle_display('item3_more');" style = "color:green; font-weight:bold;">Lemon-Mint Juice ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
 
-   <div id = "item3_more">
+   <div id = "item3_dess">
    <a class="btn_add" href="#" data-name="Lemon-Mint Juice" data-price="4.99">Add to Order</a>
    </div></td>
-    <td id = "price">$3.99</td>
+    <td class="price">$3.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/dr3.jpg" alt="Masala Chai" >
-   <p><a href= "#item4_more" onclick = "toggle_display('item4_more');" style = "color:green; font-weight:bold;">Masala Chai></a><br>
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/dr3.jpg" alt="Masala Chai" >
+   <p><a href= "#item4_dess" onclick = "toggle_display('item4_more');" style = "color:green; font-weight:bold;">Masala Chai></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
 
-   <div id = "item4_more">
+   <div id = "item4_dess">
    <a class="btn_add" href="#" data-name="Masala Chai" data-price="4.99">Add to Order</a>
    </div></td>
-   <td id = "price">$3.99</td>
+   <td class="price">$3.99</td>
    </tr>
 </table>
 
 <table id = "table_chef">
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/cs1.jpg" alt="samosa" >Chef
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/cs1.jpg" alt="samosa" >Chef
    <p><a href= "#item1_chef" onclick = "toggle_display('item1_chef');" style = "color:green; font-weight:bold;">Fish Biryani ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
    <div id = "item1_chef"> 
    <a class="btn_add" href="#" data-name="Fish Biryani" data-price="4.99">Add to Order</a>
    </div></td> 
-   <td id = "price">$14.99</td>
+   <td class="price">$14.99</td>
    </tr>
 
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/cs2.jpg" alt="samosa" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/cs2.jpg" alt="samosa" >
    <p><a href= "#item2_chef" onclick = "toggle_display('item2_chef');" style = "color:green; font-weight:bold;">Shrimp Biryani ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -337,11 +337,11 @@ function toggle_menu(id) {
    <div id = "item2_chef">
    <a class="btn_add" href="#" data-name="Shrimp Biryani" data-price="4.99">Add to Order</a>
    </div></td>
-   <td id = "price">$14.99</td>
+   <td class="price">$14.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/cs3.jpg" alt="Kadai Chicken" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/cs3.jpg" alt="Kadai Chicken" >
    <p><a href= "#item3_chef" onclick = "toggle_display('item3_chef');" style = "color:green; font-weight:bold;">Kadai chicken ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -349,11 +349,11 @@ function toggle_menu(id) {
    <div id = "item3_more">
    <a class="btn_add" href="#" data-name="Kadai Chicken" data-price="4.99">Add to Order</a>
    </div></td>
-   <td id = "price">$14.99</td>
+   <td class="price">$14.99</td>
    </tr>
    
-   <tr id = "item_list">
-   <td id = "item"><img id="item_image"  src="Images/cs4.jpeg" alt="Chicken Kebab" >
+   <tr class="item_list">
+   <td class="item"><img class="item_image"  src="Images/cs4.jpeg" alt="Chicken Kebab" >
    <p><a href= "#item4_chef" onclick = "toggle_display('item4_chef');" style = "color:green; font-weight:bold;">Spicy Chicken Kebab wih Lentil Rice ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
@@ -361,7 +361,7 @@ function toggle_menu(id) {
    <div id = "item4_chef">
    <a class="btn_add" href="#" data-name="Chicken Kebab" data-price="4.99">Add to Order</a>
    </div></td>
-   <td id = "price">$14.99</td>
+   <td class="price">$14.99</td>
    </tr>
 
 </table>

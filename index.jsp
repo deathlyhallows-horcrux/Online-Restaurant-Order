@@ -12,14 +12,14 @@
 <a href="index.jsp"><img id="title_img" src="Images/title_image1.jpg" width="200" height="200"></a>
 <header id ="header">
   
-  <a id="nav1"  href="about.html">ABOUT</a>
-  <a id="nav1"  href="menu.html">MENU</a>
-  <a id="nav1"  href="catering.html">CATERING</a>
-  <a id="nav1"  href="contact.html">CONTACT</a>
+  <a class="nav1"  href="about.html">ABOUT</a>
+  <a class="nav1"  href="menu.html">MENU</a>
+  <a class="nav1"  href="catering.html">CATERING</a>
+  <a class="nav1"  href="contact.html">CONTACT</a>
   
-<button id = "btn1" onclick="location.href = 'Reg.html';">Sign Up</button>
+<button class="btn1" onclick="location.href = 'Reg.html';">Sign Up</button>
 |
-<button id = "btn1" onclick="location.href = 'signin.jsp';">Log In</button>
+<button class="btn1" onclick="location.href = 'signin.jsp';">Log In</button>
 
 </header>
 <h1 id = "title">Seshu's</h1>

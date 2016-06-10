@@ -38,12 +38,12 @@ function validateForm() {
 <a href="index.jsp"><img id="title_img" src="Images/title_image1.jpg" width="200" height="200"></a>
 <header id ="header">
   
-  <a id="nav1"  href="about.html">ABOUT</a>
-  <a id="nav1"  href="menu.html">MENU</a>
-  <a id="nav1"  href="catering.html">CATERING</a>
-  <a id="nav1"  href="contact.html">CONTACT</a>
+  <a class="nav1"  href="about.html">ABOUT</a>
+  <a class="nav1"  href="menu.html">MENU</a>
+  <a class="nav1"  href="catering.html">CATERING</a>
+  <a class="nav1"  href="contact.html">CONTACT</a>
   
-<button id = "btn1" onclick="location.href = 'Reg.html';">Sign Up</button>
+<button class = "btn1" onclick="location.href = 'Reg.html';">Sign Up</button>
 <br><br>
 <div align="right">
 
@@ -56,7 +56,7 @@ function validateForm() {
 <td> <input type="password" name="pwd" id = "pwd" placeholder = "Enter password"></td></tr>
 </table>
 <div align="right">
-<input class="submit" type="submit" value="Submit" style="background-color:green;color:white;">
+<input class="submit" type="submit" value="Submit" >
 <%
     if(null!=request.getAttribute("errorMessage"))
     {
