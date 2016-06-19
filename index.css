@@ -121,14 +121,17 @@
     font-style: itallic;
     background-color: orange;
 }
-#menu a:focus, #menu a:active{
+#menu a:active{
 	color:white;
 }
 
-//#menu a:target{
-//	background-color: rgb(230, 149, 0);
-//	color: red;
-//}
+#menu a:target{
+    background-color: transparent;
+	color: white;
+	margin-top:-210px;
+	padding-top:210px;
+}
+
 #item1_more, #item2_more, #item3_more, #item4_more,#item5_more,
 #item6_more, #item1_main, #item2_main, #item3_main, #item4_main,
 #item5_main,#item6_main, #item7_main,#item1_dess,#item2_dess,#item3_dess,#item4_dess,
