@@ -15,14 +15,14 @@ function toggle_display(id) {
  	   e.style.display = 'block';   
  }
 
-function toggle_menu(id) {
-    var d = document.getElementById(id);
-    
-    if (id == 'btn2')
-    	document.getElementById('table_sides').style.display = 'block';
-    else
-    d.style.display = 'none'; 
- }
+$(function() {
+    $(".btn2").click(function() {
+        var tab = $(this).attr("data-tab");
+        $(".table_display").hide();
+        $("#" + tab).show();
+    });    
+});
+
 
 </script>
 </head>
@@ -46,28 +46,28 @@ function toggle_menu(id) {
 <div id = "layout">
 
 <div id = "menu">
-  <a class="btn2" href = "#table_one" onclick = "toggle_menu('btn2');">Sides</a>
-  <a class="btn2" href = "#table_main" onclick = "toggle_menu('table_sides');">Main Course</a>
-  <a class="btn2" href = "#table_desserts" onclick = "toggle_menu('table_sides');">Desserts</a>
-  <a class="btn2" href = "#table_drinks" onclick = "toggle_menu('table_sides');">Drinks</a>
-  <a class="btn2" href = "#table_chef" onclick = "toggle_menu('table_sides');">Chef Specialties</a>
+  <a class="btn2"  href = "#table_sides" data-tab = "table_sides">Sides</a>
+  <a class="btn2"  href = "#table_main" data-tab = "table_main">Main Course</a>
+  <a class="btn2" href = "#table_desserts" data-tab = "table_desserts">Desserts</a>
+  <a class="btn2" href = "#table_drinks" data-tab = "table_drinks">Drinks</a>
+  <a class="btn2" href = "#table_chef" data-tab = "table_chef">Chef Specialties</a>
 </div>
 
-<table>
-<tr><td>
-<table id = "table_sides">
+
+<table><tr><td>
+<table id = "table_sides" class="table_display">
    <tr class="item_list">
    <td class="item"><img class="item_image"  src="Images/samosa.jpg" alt="samosa" >Sides
    <p><a href= "#item1_more" onclick = "toggle_display('item1_more');" style = "color:green; font-weight:bold;">Samosa ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
-   peppers served with a red wine pepper<p>
+   peppers served with a red wine pepper</p>
    <div id = "item1_more">
    <a class="btn_add" href="#" data-name="Samosa" data-price="4.99">Add to Order</a>
    </div></td>
    <td class="price">$4.99</td>
    </tr>
 
-   <tr class="item_list">
+   <tr class="item_list" >
    <td class="item"><img class="item_image"  src="Images/s2.jpg" alt="Vegetable Manchuria" >
    <p><a href= "#item2_more" onclick = "toggle_display('item2_more');" style = "color:green; font-weight:bold;">Vegetable Manchuria ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
@@ -130,7 +130,7 @@ function toggle_menu(id) {
 
 
 
-<table id = "table_main">
+<table id = "table_main" class="table_display">
    
    <tr class="item_list">
    <td class="item"><img class="item_image"  src="Images/m1.jpg" alt="Chicken Biryani" >Main
@@ -215,10 +215,10 @@ function toggle_menu(id) {
    <td class="price">$11.99</td></tr></table>
    
 
-<table id = "table_desserts">
+<table id = "table_desserts" class="table_display">
    <tr class="item_list">
    <td class="item"><img class="item_image"  src="Images/d1.jpg" alt="Brownie Bite" >Desserts
-   <p><a href= "#item1_dess" onclick = "toggle_display('item1_more');" style = "color:green; font-weight:bold;">Brownie Bite ></a><br>
+   <p><a href= "#item1_dess" onclick = "toggle_display('item1_dess');" style = "color:green; font-weight:bold;">Brownie Bite ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
    <div id = "item1_dess"> 
@@ -229,7 +229,7 @@ function toggle_menu(id) {
 
    <tr class="item_list">
    <td class="item"><img class="item_image"  src="Images/d2.jpg" alt="Fruit Custard" >
-   <p><a href= "#item2_dess" onclick = "toggle_display('item2_more');" style = "color:green; font-weight:bold;">Fruit Custard ></a><br>
+   <p><a href= "#item2_dess" onclick = "toggle_display('item2_dess');" style = "color:green; font-weight:bold;">Fruit Custard ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
 
@@ -241,7 +241,7 @@ function toggle_menu(id) {
    
    <tr class="item_list">
    <td class="item"><img class="item_image"  src="Images/d3.jpg" alt="Gulab Jamun`" >
-   <p><a href= "#item3_dess" onclick = "toggle_display('item3_more');" style = "color:green; font-weight:bold;">Gulab Jamun ></a><br>
+   <p><a href= "#item3_dess" onclick = "toggle_display('item3_dess');" style = "color:green; font-weight:bold;">Gulab Jamun ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
 
@@ -253,7 +253,7 @@ function toggle_menu(id) {
    
    <tr class="item_list">
    <td class="item"><img class="item_image"  src="Images/d4.jpg" alt="Ghajar Ka Halwa" >
-   <p><a href= "#item4_dess" onclick = "toggle_display('item4_more');" style = "color:green; font-weight:bold;">Ghajar ka Halwa ></a><br>
+   <p><a href= "#item4_dess" onclick = "toggle_display('item4_dess');" style = "color:green; font-weight:bold;">Ghajar ka Halwa ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
 
@@ -267,13 +267,13 @@ function toggle_menu(id) {
 </table>
 
 
-<table id = "table_drinks">
+<table id = "table_drinks" class="table_display">
    <tr class="item_list">
    <td class="item"><img class="item_image"  src="Images/dr1.jpg" alt="Mango Lassi" >Drinks
-   <p><a href= "#item1_dess" onclick = "toggle_display('item1_more');" style = "color:green; font-weight:bold;">Mango Lassi ></a><br>
+   <p><a href= "#item1_drink" onclick = "toggle_display('item1_drink');" style = "color:green; font-weight:bold;">Mango Lassi ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
-   <div id = "item1_dess"> 
+   <div id = "item1_drink"> 
    <a class="btn_add" href="#" data-name="Mango Lassi" data-price="4.99">Add to Order</a>
    </div></td> 
    <td class="price">$3.99</td>
@@ -281,11 +281,11 @@ function toggle_menu(id) {
 
    <tr class="item_list">
    <td class="item"><img class="item_image"  src="Images/dr2.jpg" alt="Falooda" >
-   <p><a href= "#item2_dess" onclick = "toggle_display('item2_more');" style = "color:green; font-weight:bold;">Falooda ></a><br>
+   <p><a href= "#item2_drink" onclick = "toggle_display('item2_drink');" style = "color:green; font-weight:bold;">Falooda ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
 
-   <div id = "item2_dess">
+   <div id = "item2_drink">
    <a class="btn_add" href="#" data-name="Falooda" data-price="4.99">Add to Order</a>
    </div></td>
     <td class="price">$3.99</td>
@@ -293,11 +293,11 @@ function toggle_menu(id) {
    
    <tr class="item_list">
    <td class="item"><img class="item_image"  src="Images/dr4.jpg" alt="Lemon-Mint Juice" >
-   <p><a href= "#item3_dess" onclick = "toggle_display('item3_more');" style = "color:green; font-weight:bold;">Lemon-Mint Juice ></a><br>
+   <p><a href= "#item3_drink" onclick = "toggle_display('item3_drink');" style = "color:green; font-weight:bold;">Lemon-Mint Juice ></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
 
-   <div id = "item3_dess">
+   <div id = "item3_drink">
    <a class="btn_add" href="#" data-name="Lemon-Mint Juice" data-price="4.99">Add to Order</a>
    </div></td>
     <td class="price">$3.99</td>
@@ -305,18 +305,18 @@ function toggle_menu(id) {
    
    <tr class="item_list">
    <td class="item"><img class="item_image"  src="Images/dr3.jpg" alt="Masala Chai" >
-   <p><a href= "#item4_dess" onclick = "toggle_display('item4_more');" style = "color:green; font-weight:bold;">Masala Chai></a><br>
+   <p><a href= "#item4_drink" onclick = "toggle_display('item4_drink');" style = "color:green; font-weight:bold;">Masala Chai></a><br>
    Marinated flank steak wok-seared with sliced potatoes, broccolini, Napa cabbage, grape tomatoes and fresno 
    peppers served with a red wine pepper</p>
 
-   <div id = "item4_dess">
+   <div id = "item4_drink">
    <a class="btn_add" href="#" data-name="Masala Chai" data-price="4.99">Add to Order</a>
    </div></td>
    <td class="price">$3.99</td>
    </tr>
 </table>
 
-<table id = "table_chef">
+<table id = "table_chef" class="table_display">
    <tr class="item_list">
    <td class="item"><img class="item_image"  src="Images/cs1.jpg" alt="samosa" >Chef
    <p><a href= "#item1_chef" onclick = "toggle_display('item1_chef');" style = "color:green; font-weight:bold;">Fish Biryani ></a><br>
@@ -363,7 +363,6 @@ function toggle_menu(id) {
    </div></td>
    <td class="price">$14.99</td>
    </tr>
-
 </table>
 </td><td id="cart">
 <table><tr>
@@ -383,9 +382,9 @@ function toggle_menu(id) {
 </tr>
 </table>
 </td></tr>
-</table>   
-   
+</table> 
 </div>
+
 <div id = "linktotop">
 <a id ="backtotop" href= "#body">|Back to Top|</a>
 </div><br><br>
